@@ -20,7 +20,7 @@
             <input type="password" placeholder="Repeat Password" name="confirm-password" required>
             <hr>
 
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn" >Register</button>
           </div>
 
           <div class="container signin">
