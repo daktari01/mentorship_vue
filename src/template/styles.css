@@ -1,0 +1,137 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Lucida Grande", "Gill Sans";
+}
+
+.main-nav {
+  width: 100%;
+
+}
+
+.main-body {
+  background: url("images/beer.jpg") no-repeat;
+  background-size: 100%;
+  min-height: 100%;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8D2603;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #FDC350;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover, a:active {
+  border-bottom: #FDC350 solid 4px;
+  padding-bottom: 8px;
+}
+
+.right {
+  width: 20%;
+  height:auto;
+  float: right;
+  text-align: right;
+}
+
+.left {
+  width: 80%;
+  height:auto;
+  float:left;
+}
+
+h1 {
+  color: #8D2603;
+}
+
+* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+}
+
+.search {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid rgba(253, 195, 80, 0.7);
+  border-left: 1px solid rgba(253, 195, 80, 0.7);
+  border-radius: 5px;
+  font-size: medium;
+}
+
+hr {
+  border: 1px solid rgba(253, 195, 80, 0.4);
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #8D2603;
+  color: #FDC350;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: #8D2603;
+}
+
+.signin {
+  text-align: center;
+}
+
+.full-body {
+  min-height: 100%;
+}
+
+.form_outline {
+  border: 1px solid rgba(141, 38, 3, 0.7);
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+label b {
+  color: #8D2603;
+}
+
+footer {
+  padding: 10px;
+  color: #FDC350;
+  background-color: #8D2603;
+  text-align: center;
+  width: 100%;
+}
