@@ -29,6 +29,10 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <h3>Directives Test</h3>
+    <ul>
+      <li v-for="(name, index) in list" :key="index">{{name}}</li>
+    </ul>
   </div>
 </template>
 
@@ -38,6 +42,11 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+  	return {
+  		list: ['dami', 'dindi', 'James', 'andela'],
+    }
+  }
 };
 </script>
 
