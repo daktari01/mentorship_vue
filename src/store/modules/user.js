@@ -16,7 +16,7 @@ const user = {
     mutateUserData: (state, payload) => {
       state.user = payload;
     },
-    
+
   },
 
   actions: {

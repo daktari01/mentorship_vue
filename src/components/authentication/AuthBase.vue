@@ -4,13 +4,11 @@
 
 <script>
 export default {
-  
-}
+
+};
 </script>
 
 <style>
 @import '../../assets/styles.scss'
 
 </style>
-
-

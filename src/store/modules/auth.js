@@ -1,22 +1,34 @@
 import FireBaseService from '../../services/auth';
 
-const user = {
-  state: {},
+const auth = {
+  state: {
+    status: '',
+    token: '',
+    user: {},
+  },
 
   getters: {},
 
-  mutations: {},
+  mutations: {
+    mutateUserData: (state, payload) => {
+      state.status = payload.status
+      state.user = payload.decoded_token
+    }
+  },
 
   actions: {
     createNewUser: async ({ dispatch }, payload) => {
       try {
         const response = await FireBaseService.register(payload);
-        dispatch('actionUserData', response);
+        dispatch('mutationUserData', response);
+        console.log('Action called');
       } catch (error) {
         // TODO set up error store
+        // console.log('Error -->', error);
+        this.$store.commit('ERROR', error)
       }
     },
   },
 };
 
-export default user;
+export default auth;
