@@ -10,6 +10,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "firebase": "^5.8.0",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
